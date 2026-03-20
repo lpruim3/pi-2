@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "tec-web",
+			"path": "../../tec-web/tec-web"
+		}
+	],
+	"settings": {}
+}
