@@ -1,0 +1,8 @@
+# Compilação e Executáveis
+*.o
+*.exe
+*.out
+*.app
+
+# Dataset
+data/*.csv
