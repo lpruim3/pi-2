@@ -35,3 +35,12 @@ void liberar_vetor(VetorProdutos *v) {
     v->tamanho = 0;
     v->capacidade = 0;
 }
+
+int busca_sequencial(VetorProdutos *v, int id_buscado) {
+    for (int i = 0; i < v->tamanho; i++) {
+        if (v->dados[i].id == id_buscado) {
+            return i;
+        }
+    }
+    return -1;
+}
