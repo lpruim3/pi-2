@@ -15,7 +15,7 @@ typedef struct {
 } VetorProdutos;
 
 void inicializador_vetor(VetorProdutos *v);
-void adicionar_produto(VetorProdutos *v, Produto p);
+int adicionar_produto(VetorProdutos *v, Produto p);
 void liberar_vetor(VetorProdutos *v);
 int busca_sequencial(VetorProdutos *v, int id_buscado);
 
