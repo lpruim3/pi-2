@@ -1,5 +1,5 @@
-#include "readcsv.h"
-#include "../core/produto.h"
+#include "./include/readcsv.h"
+#include "./include/produto.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
