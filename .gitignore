@@ -3,6 +3,3 @@
 *.exe
 *.out
 *.app
-
-# Dataset
-data/*.csv
