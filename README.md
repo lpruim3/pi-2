@@ -156,6 +156,6 @@ Embora seja um algoritmo simples e de fácil implementação, seu desempenho tor
 
 * Ana Luiza Gomes de Lima - Matrícula: 2512130059
 * Lucas Pessoa Ranieri - Matrícula: 2512130092
-* Pedro Augusto Machado Cardoso - 2612130005
+* Pedro Augusto Machado Cardoso - Matrícula: 2612130005
 
 
