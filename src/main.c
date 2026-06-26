@@ -87,8 +87,8 @@ int main()
     TabelaHash tabela;
 
     inicializador_vetor(&vetor);
-    int tamanho_dataset = 300006;
-    inicializar_tabela(&tabela, tamanho_dataset);
+    int tamanho_buckets = 131072; // 2^17, para reduzir colisões
+    inicializar_tabela(&tabela, tamanho_buckets);
 
     printf("Carregando CSV...\n");
     if (!ler_csv("data/dataset3.csv", &vetor, &tabela))

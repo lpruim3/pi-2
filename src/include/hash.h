@@ -15,7 +15,7 @@ typedef struct {
 } TabelaHash;
 
 void inicializar_tabela(TabelaHash *tabela, int tamanho);
-int funcao_hash(int id, int tamanho);
+int funcao_hash(int id);
 void inserir_tabela(TabelaHash *tabela, Produto prod);
 int busca_tabela(TabelaHash *tabela, int id);
 void liberar_tabela(TabelaHash *tabela);
