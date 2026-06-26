@@ -1,4 +1,4 @@
-# Sistema de Análise de Desempenho — Busca Sequencial
+# Análise de Desempenho Computacional: Busca Sequencial vs. Tabela Hash
 
 Projeto desenvolvido em grupo para a **disciplina de Projeto Integrador do Centro Universitário IESB**. O objetivo do projeto foi realizar a reengenharia e evolução arquitetural de um sistema de recuperação de dados em memória, saindo de um modelo linear (Fase I) para uma estrutura indexada de alta performance via Tabela Hash (Fase II).
 
