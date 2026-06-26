@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "./include/hash.h"
+#include "hash.h"
 
 void inicializar_tabela(TabelaHash *tabela, int tamanho) {
     tabela->tamanho = tamanho;
@@ -12,17 +12,17 @@ void inicializar_tabela(TabelaHash *tabela, int tamanho) {
     }
 }
 
-// funcao hash: Bitwise AND com 131071 para ser o modulo de 131072 (2^17).
-int funcao_hash(int id) {
+// funcao hash: resto da divisao simples
+int funcao_hash(int id, int tamanho) {
     if (id < 0) {
-        return (-id) & 131071; // para lidar com ids negativos
+        return (-id) % tamanho;
     }
-    return id & 131071;
+    return id % tamanho;
 }
 
 // inserção com encadeamento
 void inserir_tabela(TabelaHash *tabela, Produto prod) {
-    int indice = funcao_hash(prod.id);
+    int indice = funcao_hash(prod.id, tabela->tamanho);
     
     Node *novo_no = (Node *)malloc(sizeof(Node));
     novo_no->produto = prod;
@@ -41,7 +41,7 @@ void inserir_tabela(TabelaHash *tabela, Produto prod) {
 
 // busca O(1), caso medio
 int busca_tabela(TabelaHash *tabela, int id) {
-    int indice = funcao_hash(id);
+    int indice = funcao_hash(id, tabela->tamanho);
     Node *atual = tabela->buckets[indice];
     
     while (atual != NULL) {
